@@ -15,10 +15,10 @@ function Navbar(props) {
     <>
       <nav className={`navbar${props.mode} flex-row`}>
         <div className="nav-left flex-row">
-            <div className="icon">
+            <div className={`icon${props.mode}`}>
                 Port
             </div>
-            <div className="icon-name">
+            <div className={`icon-name${props.mode}`}>
                 folio
             </div>
         </div>

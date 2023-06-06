@@ -13,7 +13,7 @@
 
 .navbarLight {
     height: 82px;
-    background-color: #ae95ff;
+    background-color: #95304e;
     position: sticky;
     top: 0;
     z-index: 10000;
@@ -48,24 +48,40 @@
 .nav-listDark li a, .nav-listLight li a {
     transition: 0.3s;
 }
-
+/* 
 .nav-listLight li a {
     color: rgb(132, 30, 63);
+} */
+
+.nav-listLight li a:hover {
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .nav-listDark li a:hover {
     color: rgb(255, 255, 255, 0.7);
 }
 
-.icon {
+.iconDark {
     font-size: 2.4rem;
     color: rgb(213, 33, 58);
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.icon-name {
+.iconLight {
+    font-size: 2.4rem;
+    color: #d8cdfd;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.icon-nameDark {
     font-size: 2.4rem;
     color: rgb(132, 30, 63);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.icon-nameLight {
+    font-size: 2.4rem;
+    color: #be80c0;
     font-family: 'Josefin Sans', sans-serif;
 }
 

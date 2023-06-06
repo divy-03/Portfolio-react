@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+
+
+* {
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.sec-mainDark {
+    background-image: linear-gradient(to right, rgb(25, 20, 42), rgb(36, 31, 62));
+    justify-content: start;
+    /* border: 2px solid; */
+    /* align-items: center; */
+}
+
+.sec-mainLight {
+    background-image: linear-gradient(to right bottom, #ae95ff, rgb(210, 103, 117), rgb(36, 31, 62));
+    justify-content: start;
+    /* border: 2px solid; */
+    /* align-items: center; */
+}
+
+.front-main {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 80vh; */
+    /* height: 60vh; */
+    /* border: 2px solid; */
+    animation-name: fade-scale;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.snap {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fade-left;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.snap img {
+    background-image: linear-gradient(to right, rgb(132, 30, 63, 0.6), rgb(132, 30, 63), rgb(213, 33, 58) 80%);
+    border-radius: 50pc;
+    content: url('./snap_full.png');
+    width: 90%;
+    height: 70%;
+    margin: 5.5vh 0;
+}
+
+.wlc {
+    display: inline;
+    background-color: rgb(132, 30, 63, 0.6);
+    width: 117px;
+    margin: 0px 10vw;
+    color: white;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.name {
+    /* display: inline; */
+    font-size: 3.2rem;
+    margin: 0px 10vw;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pro {
+    /* font-size: 1rem; */
+    color: rgb(255, 255, 255, 0.7);
+    margin: 0 10vw;
+}
+
+.desc {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255, 0.9);
+    margin: 15px 10vw;
+    text-align: justify;
+}
+
+
+@media screen and (min-width: 849px) and (max-width: 1023px) {
+
+    .wlc,
+    .desc {
+        font-size: 1.02rem;
+    }
+
+    .name {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .snap img {
+        /* background: none; */
+        /* content: url('../Images/snapp-removebg-preview.png'); */
+        width: 40vw;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .snap img {
+        content: url('./snapp-removebg-preview.png');
+    }
+
+    .sec-mainDark {
+        flex-direction: column-reverse;
+    }
+
+    .front-main {
+        margin-bottom: 10vh;
+        margin-top: 1vh;
+        align-items: center;
+    }
+
+    .wlc,
+    .name,
+    .pro {
+        margin: 0 0vw;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 2.4rem;
+    }
+
+    .desc,
+    .wlc {
+        font-size: 1.02rem;
+    }
+
+    .desc {
+        margin: 0;
+        text-align: justify;
+    }
+}
