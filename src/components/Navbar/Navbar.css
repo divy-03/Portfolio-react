@@ -1,9 +1,14 @@
+*{
+    font-size: 18px;
+}
+
 .navbarDark {
     height: 82px;
     background-color: rgb(25, 20, 42);
     position: sticky;
     top: 0;
     z-index: 10000;
+    transition: all 0.3s;
 }
 
 .navbarLight {
@@ -12,6 +17,7 @@
     position: sticky;
     top: 0;
     z-index: 10000;
+    transition: all 0.3s;
 }
 
 .nav-left {
@@ -35,15 +41,19 @@
     color: white;
 }
 
-.nav-list li {
+.nav-listDark li, .nav-listLight li {
     margin: 0px 10px;
 }
 
-.nav-list li a {
+.nav-listDark li a, .nav-listLight li a {
     transition: 0.3s;
 }
 
-.nav-list li a:hover {
+.nav-listLight li a {
+    color: rgb(132, 30, 63);
+}
+
+.nav-listDark li a:hover {
     color: rgb(255, 255, 255, 0.7);
 }
 
@@ -66,7 +76,7 @@
     color: white;
     padding: 8px 12px;
     border-radius: 3px;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 
@@ -78,10 +88,14 @@
 } */
 
 .download {
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
-.download:hover {
+.download button {
+    margin: 0;
+}
+
+.download a:hover {
     /* transform: translate(2px, 2px); */
     transform: scale(1.04);
 }
@@ -99,6 +113,8 @@
     z-index: 1000;
     width: 170px;    
     text-align: center;
+    transition: all 0.3s;
+
 }
 
 .nav-respDark ul li {
@@ -124,6 +140,8 @@
     z-index: 1000;
     width: 170px; 
     text-align: center;   
+    transition: all 0.3s;
+
 }
 
 .nav-respLight ul li {
@@ -152,6 +170,7 @@
 .CV-btn-resp:hover {
     color: rgb(69, 0, 22);
     background-color: rgba(250, 3, 36, 0.5);
+    /* cursor: pointer; */
 }
 
 .btn-Light {
@@ -171,11 +190,15 @@
     margin-top: 10px;
     font-size: 18px;
     border: none;
-    background-color: rgb(25, 20, 42);
+    background-color: rgb(33, 26, 55);
     color: rgb(213, 33, 58);
     box-shadow: rgba(112, 112, 255, 0.2) 0px 1px 1px ;
     padding: 10px;
     border-radius: 5px;
+}
+
+.btn-Dark:hover, .btn-Light:hover {
+    cursor: pointer;
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -208,7 +231,7 @@
 
 /* -------------------------Media-Query------------------------------ */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
     .btn-menu {
         display: block;
     }
