@@ -9,6 +9,7 @@
     top: 0;
     z-index: 10000;
     transition: all 0.3s;
+    
 }
 
 .navbarLight {
@@ -19,6 +20,7 @@
     top: 0;
     z-index: 10000;
     transition: all 0.3s;
+    
 }
 
 .nav-left {
@@ -197,7 +199,7 @@
     margin-top: 10px;
     font-size: 18px;
     border: none;
-    background-color: #e1d8ff;
+    background-color: #d6a1e8;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;  
     color: rgb(132, 30, 63);
     padding: 10px;

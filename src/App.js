@@ -1,7 +1,8 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import React, { useState } from "react";
-import Landing from "./components/Landing-main/Landing"
+import Landing from "./components/Landing-main/Landing";
+import Blank from "./components/blank";
 
 function App() {
   const [mode, setMode] = useState("Dark");
@@ -9,16 +10,18 @@ function App() {
   const toggleMode = () => {
     if (mode === "Dark") {
       setMode("Light");
-    } 
-    else {
+    } else {
       setMode("Dark");
     }
   };
 
   return (
     <>
-      <Navbar mode={mode} toggleMode={toggleMode}/>
-      <Landing mode={mode}/>
+      <Navbar mode={mode} toggleMode={toggleMode} />
+      <Landing mode={mode} />
+      <Blank />
+      <Landing mode={mode} />
+      <Landing mode={mode} />
     </>
   );
 }

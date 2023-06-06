@@ -12,6 +12,8 @@
     transition: all 1s;
     /* border: 2px solid; */
     /* align-items: center; */
+    /* height: 100vh; */
+    overflow: hidden;
 }
 
 .sec-mainLight {
@@ -20,6 +22,8 @@
     transition: all 1s;
     /* border: 2px solid; */
     /* align-items: center; */
+    /* height: 100vh; */
+    overflow: hidden;
 }
 
 .front-main {
@@ -33,9 +37,12 @@
     animation-name: fade-scale;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    overflow: hidden;
+    /* margin: 0 10vw;  */
 }
 
-.snapDark, .snapLight {
+.snapDark,
+.snapLight {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -45,8 +52,9 @@
     animation-iteration-count: 1;
 }
 
-.snapDark img, .snapLight img {
-    border-radius: 50pc;    
+.snapDark img,
+.snapLight img {
+    border-radius: 50pc;
     background-image: linear-gradient(to right bottom, rgb(132, 30, 63, 0.6), rgb(132, 30, 63), rgb(213, 33, 58) 80%);
     content: url('./snap_full.png');
     width: 90%;
@@ -61,9 +69,15 @@
 
 .wlc {
     /* display: inline; */
-    background-color: rgb(132, 30, 63, 0.6);
-    width: 129px; 
     margin: 0px 10vw;
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+
+.wlc p {
+    background-color: rgb(132, 30, 63, 0.6);
+    width: 129px;
     color: white;
     font-size: 1.2rem;
     padding: 8px 12px;
@@ -72,9 +86,14 @@
 
 .name {
     /* display: inline; */
-    font-size: 3.2rem;
-    margin: 0px 10vw;
     margin-top: 10px;
+    margin: 0px 10vw;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.name p {
+    font-size: 3.2rem;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -87,6 +106,7 @@
 .desc {
     font-size: 1.2rem;
     color: rgb(255, 255, 255, 0.9);
+    /* margin: 15px 0; */
     margin: 15px 10vw;
     text-align: justify;
 }
@@ -96,6 +116,7 @@
     0% {
         margin: 0;
     }
+
     100% {
         left: 100%;
         margin: 10px -35px 10px 25px;
@@ -109,7 +130,7 @@
 }
 
 
-.typeList {    
+.typeList {
     list-style: none;
     height: 50px;
     overflow: hidden;
@@ -153,7 +174,8 @@
 
 @media screen and (max-width: 850px) {
 
-    .snapLight img, .snapDark img {
+    .snapLight img,
+    .snapDark img {
         /* background: none; */
         /* content: url('../Images/snapp-removebg-preview.png'); */
         width: 40vw;
@@ -162,7 +184,9 @@
 
 
 @media screen and (max-width: 750px) {
-    .snapLight img, .snapDark img {
+
+    .snapLight img,
+    .snapDark img {
         content: url('./snapp-removebg-preview.png');
     }
 
@@ -170,7 +194,8 @@
         background-image: linear-gradient(to right bottom, #ae95ffab 40%, rgb(210, 103, 117, 0.4));
     }
 
-    .sec-mainDark, .sec-mainLight {
+    .sec-mainDark,
+    .sec-mainLight {
         flex-direction: column-reverse;
     }
 
@@ -187,6 +212,10 @@
         text-align: center;
     }
 
+    /* .front-main {
+        margin: 0;
+    } */
+
     .name {
         font-size: 2.4rem;
     }
@@ -200,4 +229,32 @@
         margin: 0;
         text-align: justify;
     }
+}
+
+.fade-up {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%) scale(0.4);
+    transition: all 2s;
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(-50%);
+    filter: blur(5px);
+    transition: all 2s;
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(25%) scale(0.7);
+    filter: blur(5px);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) translateX(0) scale(1);
+
 }
