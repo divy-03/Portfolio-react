@@ -45,7 +45,7 @@ function Navbar(props) {
                     <li><a href="#about">About Me</a></li>
                     <li><a href="/">Services</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="/" className="CV-btn-resp" download>DownloadCV</a></li>
+                    <li><button className="CV-btn-resp" download>DownloadCV</button></li>
                 <button onClick={props.toggleMode} className={`btn-${props.mode}`}>{props.mode} Mode</button>
                 </ul>
             </div>
