@@ -50,10 +50,22 @@
   flex-direction: column;
 }
 
-.blank {
+.cont-blank {
   height: 100vh;
   /* color: aqua; */
   background-color: black;
+  text-align: justify;
+}
+
+.small-cont {
+  width: 600px;
+  height: auto;
+  text-align: justify;
+  /* justify-content: space-between; */
+}
+
+.blank {
+  justify-content: space-between;
 }
 
 .blank span {

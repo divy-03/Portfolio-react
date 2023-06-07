@@ -36,19 +36,23 @@ function blank() {
   });
   return (
     
-    <div className='blank flex-row' style={{
-      // margin: "20px",
-      // backgroundImage: "linear-gradient(to right top, #ae95ff, rgb(210, 103, 117), rgb(36, 31, 62))" 
-    }}
-      >
-      <span className='fade-right-fast hello' href="/">Hello </span> 
-      <span className='fade-right-fast hello' href="/">World! </span><br/> 
-      <span className='fade-right-fast hello' href="/">This </span> 
-      <span className='fade-right-fast hello' href="/">Is </span> 
-      <span className='fade-right-fast hello' href="/">My </span> 
-      <span className='fade-right-fast hello' href="/">First </span> 
-      <span className='fade-right-fast hello' href="/">Website </span> 
+    <>
+    <div className="cont-blank flex-row">
+      <div className="small-cont flex-col">
+        <div className='blank flex-row'>
+          <span className='fade-right-fast hello' href="/">Hello </span> 
+          <span className='fade-right-fast hello' href="/">Everyone </span>
+        </div>
+        <div className="blank flex-row">
+        <span className='fade-right-fast hello' href="/">This </span> 
+          <span className='fade-right-fast hello' href="/">Is </span> 
+          <span className='fade-right-fast hello' href="/">My </span> 
+          <span className='fade-right-fast hello' href="/">First </span> 
+          <span className='fade-right-fast hello' href="/">Website </span> 
+        </div>
+      </div>
     </div>
+    </>
   )
 }
 

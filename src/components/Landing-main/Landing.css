@@ -234,7 +234,7 @@
 .fade-up {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(100%) scale(0.4);
+    transform: translateY(50%) scale(0.8);
     transition: all 2s;
 }
 
@@ -257,6 +257,11 @@
     transform: translateX(25%) scale(0.7);
     filter: blur(5px);
     transition: all 2s;
+}
+
+.fade-left-simple {
+    transform: translateX(50%);
+    transition: all 3s;
 }
 
 .show {
