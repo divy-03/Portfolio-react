@@ -17,8 +17,12 @@ function Landing(props) {
   const fadeLeft = document.querySelectorAll(".fade-left");
   const fadeUp = document.querySelectorAll(".fade-up");
   const fadeDown = document.querySelectorAll(".fade-down");
+  const fadeRightFast = document.querySelectorAll('.fade-right-fast');
 
   fadeRight.forEach((element) => {
+    observer.observe(element);
+  });
+  fadeRightFast.forEach((element) => {
     observer.observe(element);
   });
   fadeLeft.forEach((element) => {

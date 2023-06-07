@@ -52,17 +52,50 @@
 
 .blank {
   height: 100vh;
-  color: aqua;
+  /* color: aqua; */
+  background-color: black;
 }
 
-.blank a {
+.blank span {
+  white-space: pre-wrap;
   font-size: 40px;
+  font-weight: 800;
   color: black;
-  background-image: linear-gradient(to right, #ff0000, #00ff00);
+  background-image: linear-gradient(to right, rgb(39, 39, 39), white);
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text;
   animation: gradient-animation 1s linear infinite;
 }
+
+.hello:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.hello:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.hello:nth-child(4) {
+  transition-delay: 300ms;
+}
+
+.hello:nth-child(5) {
+  transition-delay: 400ms;
+}
+
+.hello:nth-child(6) {
+  transition-delay: 500ms;
+}
+
+.hello:nth-child(7) {
+  transition-delay: 600ms;
+}
+
+.hello:nth-child(8) {
+  transition-delay: 700ms;
+}
+
+
 
 @keyframes gradient-animation {
   0% {

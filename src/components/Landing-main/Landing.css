@@ -240,9 +240,16 @@
 
 .fade-right {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-100%);
     filter: blur(5px);
     transition: all 2s;
+}
+
+.fade-right-fast {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    transition: all 1s;
 }
 
 .fade-left {
